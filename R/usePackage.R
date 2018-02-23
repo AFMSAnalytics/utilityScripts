@@ -16,7 +16,7 @@ usePackage <- function(package) {
     
   }
   
-  message(paste0("Loading Package ", package, "..."))
-  require(package, character.only = TRUE)
+  message(paste0("Loading package ", package, "..."))
+  library(package)
   
 }
