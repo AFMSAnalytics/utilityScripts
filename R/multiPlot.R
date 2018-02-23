@@ -60,7 +60,7 @@ multiPlot <- function(..., plotlist = NULL, file, cols = 1, layout = NULL) {
   } else {
     # Set up the page
     grid::grid.newpage()
-    grid::pushViewport(viewport(layout = grid.layout(nrow(layout)
+    grid::pushViewport(grid::viewport(layout = grid.layout(nrow(layout)
       , ncol(layout))))
 
     # Make each plot, in the correct location
