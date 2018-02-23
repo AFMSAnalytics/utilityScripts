@@ -4,6 +4,7 @@ Title: Useful functions for easier R use
 Version: 0.0.0.9003
 Authors@R: person("Christopher", "Kittrell", email = "ckittrell@knowesis-inc.com", role = c("aut"))
   person("Mike", "DeCarlo", email = "mdecarlo@knowesis-inc.com", role = c("aut", "cre"))
+  person("Winston", "Chang", role = c("aut"))
 Description: This package is a miscellaneous collection of utility centric functions that seek to ease or streamline efforts.
 Depends: R (>= 3.0.0)
 License: file LICENSE
