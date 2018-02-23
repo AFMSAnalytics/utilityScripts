@@ -2,9 +2,9 @@
 #' 
 #' The multiPlot() function is meant to make plotting of multiple plot objects easier and more straightforward. Adapted from Winston Chang's "Cookbook for R".
 #' @param plotlist A vector list of plot objects, e.g. c(plot1, plot2, ..., plot_n).
-#' @param file .
 #' @param cols Number of columns in layout.
 #' @param layout A matrix specifying the layout. If present, 'cols' is ignored.
+#' @param file 
 #' @keywords plot multi
 #' @export
 #' @examples 
@@ -36,7 +36,7 @@
 #'   
 #' multiPlot(p1, p2, p3, p4, cols = 2)
 
-multiPlot <- function(..., plotlist = NULL, file, cols = 1, layout = NULL) {
+multiPlot <- function(..., plotlist = NULL, cols = 1, layout = NULL, file = NULL) {
 
   # Make a list from the ... arguments and plotlist
   plots <- c(list(...), plotlist)
@@ -61,7 +61,7 @@ multiPlot <- function(..., plotlist = NULL, file, cols = 1, layout = NULL) {
     grid::grid.newpage()
     grid::pushViewport(grid::viewport(layout = grid::grid.layout(nrow(layout)
       , ncol(layout))))
-
+      
     # Make each plot, in the correct location
     for (i in 1:num_plots) {
       # Get the i,j matrix positions of the regions that contain this subplot

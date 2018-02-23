@@ -4,16 +4,16 @@
 \alias{multiPlot}
 \title{Plotting of multiple objects in a single window}
 \usage{
-multiPlot(..., plotlist = NULL, file, cols = 1, layout = NULL)
+multiPlot(..., plotlist = NULL, cols = 1, layout = NULL, file = NULL)
 }
 \arguments{
 \item{plotlist}{A vector list of plot objects, e.g. c(plot1, plot2, ..., plot_n).}
 
-\item{file}{.}
-
 \item{cols}{Number of columns in layout.}
 
 \item{layout}{A matrix specifying the layout. If present, 'cols' is ignored.}
+
+\item{file}{}
 }
 \description{
 The multiPlot() function is meant to make plotting of multiple plot objects easier and more straightforward. Adapted from Winston Chang's "Cookbook for R".
