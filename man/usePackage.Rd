@@ -4,10 +4,10 @@
 \alias{usePackage}
 \title{Package installing and loading function}
 \usage{
-usePackage(p)
+usePackage(package)
 }
 \arguments{
-\item{p}{A package name as a quoted string.}
+\item{package}{A package name as a quoted string.}
 }
 \description{
 The usePackage function takes a single command, the name of a package, and will install it, if not already installed, and then load it.
