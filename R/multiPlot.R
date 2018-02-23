@@ -35,7 +35,6 @@
 #'   theme(legend.position="none")        # No legend (redundant in this graph)  
 #'   
 #' multiPlot(p1, p2, p3, p4, cols = 2)
-#' multiPlot(plotlist = c(p1, p2, p3, p4), cols = 2)
 
 multiPlot <- function(..., plotlist = NULL, file, cols = 1, layout = NULL) {
 
