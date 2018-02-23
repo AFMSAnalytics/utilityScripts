@@ -4,10 +4,10 @@
 \alias{usePackages}
 \title{Package (multiple) installing and loading function}
 \usage{
-usePackages(p)
+usePackages(..., packlist = NULL)
 }
 \arguments{
-\item{p}{A list of package names as a vector of quoted strings.}
+\item{packlist}{A list of package names as a vector of quoted strings.}
 }
 \description{
 The usePackages function takes a single command, a list of package names, and will install them, if not already installed, and then load them.
