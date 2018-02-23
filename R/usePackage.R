@@ -1,7 +1,7 @@
 #' Package installing and loading function
 #' 
 #' The usePackage function takes a single command, the name of a package, and will install it, if not already installed, and then load it.
-#' @param p A package name as a string in quotes.
+#' @param p A package name as a quoted string.
 #' @keywords use pack
 #' @export
 #' @examples 

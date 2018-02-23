@@ -7,7 +7,7 @@
 usePackage(p)
 }
 \arguments{
-\item{p}{A package name as a string in quotes.}
+\item{p}{A package name as a quoted string.}
 }
 \description{
 The usePackage function takes a single command, the name of a package, and will install it, if not already installed, and then load it.
