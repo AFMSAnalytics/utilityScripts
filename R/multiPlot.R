@@ -37,7 +37,7 @@
 #' multiPlot(p1, p2, p3, p4, cols = 2)
 #' multiPlot(plotlist = c(p1, p2, p3, p4), cols = 2)
 
-multiplot <- function(..., plotlist = NULL, file, cols = 1, layout = NULL) {
+multiPlot <- function(..., plotlist = NULL, file, cols = 1, layout = NULL) {
 
   # Make a list from the ... arguments and plotlist
   plots <- c(list(...), plotlist)
