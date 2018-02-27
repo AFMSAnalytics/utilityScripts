@@ -30,6 +30,10 @@
 #'  
 #'# Convert into sub-frame array (5 "no_subs")
 #'subbed_5 <- subframe(df = rand_frame, no_subs = 5)
+#'
+#'for (i in 1:10) {
+#'  assign(paste0("rand_frame_", i), subbed_10[, , i])
+#'}
 #'  
 #'@export
 
@@ -66,8 +70,26 @@ subframe <- function(df, no_subs = NULL) {
     
     if (i == 1) {
       
-      subs <- array(dim = c(sub_rows, c_len, no_subs), dimnames = list(c("row"
-        , "column", "subset")))
+      for(m in 1:no_subs) {
+        
+        if (m == 1) {
+          
+          subnames <- c(paste0("sub_", m))
+          
+        } else {
+
+        subnames <- c(subnames, paste0("sub_", m))
+
+        }
+        
+      }
+      
+      subs <- array(dim = c(sub_rows, c_len, no_subs)
+                    , dimnames = list( c(1:sub_rows)
+                                       , c(colnames(df))
+                                       , c(subnames)
+                                      )
+                    )
       
     }
     
