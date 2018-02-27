@@ -1,37 +1,37 @@
-#'  An sub-framing function
+#'An sub-framing function
 #'  
-#'  The \code{"subframe"} function is a subsetting function intended to
+#'The \code{"subframe"} function is a subsetting function intended to
 #'  produce equivalently size subsets from a single data frame. This is done by
 #'  evaluating the number of observations in the original data set and
 #'  calculating how many rows should be in each subset for a given nubmer of
 #'  subsets.
 #'  
-#'  The purpose behind \code{"subframe"} is to break apart large data frames into
+#'The purpose behind \code{"subframe"} is to break apart large data frames into
 #'  smaller ones for the sake of efficiency. This could be useful for test sets
 #'  for code or method testing, etc.
 #'  
-#'  @param df data frame with any number of columns or rows to be subsetted to
-#'    equivalently sized sub-frames.
-#'  @param no_subs singel, numeric value of the number of sub-frames desired.
-#'    Default is \code{NULL} in which case, if no value is entered, the frame
-#'    will be divided into 10 sub-frames.
+#'@param df data frame with any number of columns or rows to be subsetted to
+#'  equivalently sized sub-frames.
+#'@param no_subs singel, numeric value of the number of sub-frames desired.
+#'  Default is \code{NULL} in which case, if no value is entered, the frame
+#'  will be divided into 10 sub-frames.
 #'    
-#'  @return array with dimensions as sub-frame rows, sub-frame columns, and
-#'    and sub-frame index.
+#'@return array with dimensions as sub-frame rows, sub-frame columns, and
+#'  and sub-frame index.
 #'    
-#'  @example 
-#'  # Create data frame
-#'  rand_frame <- data.frame(runif(100, 0, 1)
-#'    , sample(c("M", "F", "Z"), 100, replace = TRUE)
-#'    , rnorm(100, 0, 1))
+#'@examples 
+#'# Create data frame
+#'rand_frame <- data.frame(runif(100, 0, 1)
+#'  , sample(c("M", "F", "Z"), 100, replace = TRUE)
+#'  , rnorm(100, 0, 1))
 #'    
-#'  # Convert into sub-frame array (default "no_subs")
-#'  subbed_10 <- subframe(df = rand_frame)
+#'# Convert into sub-frame array (default "no_subs")
+#'subbed_10 <- subframe(df = rand_frame)
 #'  
-#'  # Convert into sub-frame array (5 "no_subs")
-#'  subbed_5 <- subframe(df = rand_frame, no_subs = 5)
+#'# Convert into sub-frame array (5 "no_subs")
+#'subbed_5 <- subframe(df = rand_frame, no_subs = 5)
 #'  
-#'  @export
+#'@export
 
 subframe <- function(df, no_subs = NULL) {
   
