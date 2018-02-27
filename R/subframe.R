@@ -1,14 +1,14 @@
 #'An sub-framing function
-#'  
+#'
 #'The \code{"subframe"} function is a subsetting function intended to
-#'  produce equivalently size subsets from a single data frame. This is done by
-#'  evaluating the number of observations in the original data set and
-#'  calculating how many rows should be in each subset for a given nubmer of
-#'  subsets.
+#'produce equivalently size subsets from a single data frame. This is done by
+#'evaluating the number of observations in the original data set and
+#'calculating how many rows should be in each subset for a given nubmer of
+#'subsets.
 #'  
 #'The purpose behind \code{"subframe"} is to break apart large data frames into
-#'  smaller ones for the sake of efficiency. This could be useful for test sets
-#'  for code or method testing, etc.
+#'smaller ones for the sake of efficiency. This could be useful for test sets
+#'for code or method testing, etc.
 #'  
 #'@param df data frame with any number of columns or rows to be subsetted to
 #'  equivalently sized sub-frames.
