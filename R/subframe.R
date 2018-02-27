@@ -31,7 +31,7 @@
 #'# Convert into sub-frame array (5 "no_subs")
 #'subbed_5 <- subframe(df = rand_frame, no_subs = 5)
 #'
-#'for (i in 1:10) {
+#'for (i in 1:dim(subbed_10)[3]) {
 #'  assign(paste0("rand_frame_", i), subbed_10[, , i])
 #'}
 #'  
