@@ -66,7 +66,8 @@ subframe <- function(df, no_subs = NULL) {
     
     if (i == 1) {
       
-      subs <- array(dim = c(sub_rows, c_len, no_subs), dimnames = c("row", "column", "subset"))
+      subs <- array(dim = c(sub_rows, c_len, no_subs), dimnames = list(c("row"
+        , "column", "subset")))
       
     }
     
