@@ -24,6 +24,7 @@
 #'rand_frame <- data.frame(runif(100, 0, 1)
 #'  , sample(c("M", "F", "Z"), 100, replace = TRUE)
 #'  , rnorm(100, 0, 1))
+#'colnames(rand_frame) <- c("runif", "sex_sample", "rnorm")
 #'    
 #'# Convert into sub-frame array (default "no_subs")
 #'subbed_10 <- subframe(df = rand_frame)
