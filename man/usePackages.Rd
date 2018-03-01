@@ -4,7 +4,7 @@
 \alias{usePackages}
 \title{Package (multiple) installing and loading function}
 \usage{
-usePackages(..., packlist = NULL)
+usePackages(packlist = c())
 }
 \arguments{
 \item{packlist}{A list of package names as a vector of quoted strings.}

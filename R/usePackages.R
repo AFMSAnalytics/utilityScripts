@@ -7,9 +7,9 @@
 #' @examples 
 #' usePackage(c("ggplot2", "dplyr"))
 
-usePackages <- function(..., packlist = NULL) {
+usePackages <- function(packlist = c()) {
   
-  packages <- c(list(...), packlist)
+  packages <- c(packlist)
   
   for (i in 1:length(packages)) {
     
