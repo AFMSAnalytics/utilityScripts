@@ -30,6 +30,6 @@ sampleRandomRows <- function(df, n, replace = FALSE) {
       
   }
   
-  return(data.frame(df[sample(nrow(df), n), ]))
+  return(data.frame(df[sample(x = nrow(df), size = n, replace = replace), ]))
   
 }
