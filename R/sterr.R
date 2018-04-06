@@ -24,4 +24,5 @@ sterr <- function(x, na.rm = FALSE) {
   } else {
     stop("ERROR MESSAGE:\nThe variable 'na.rm' must be set to either 'TRUE' or 'FALSE'.\n")
   }
+  return(se)
 }
